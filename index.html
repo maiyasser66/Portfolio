@@ -1,0 +1,130 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mai Yasser | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <img src="profile.jpg" alt="Mai Yasser" class="profile-img">
+    <h1>Hi, I'm <span class="highlight">Mai Yasser</span></h1>
+    <h2 class="typing"></h2>
+    <p>Crafting modern, responsive web applications and turning ideas into digital experiences.</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Mai Yasser, a passionate developer from
+      Egypt, with a keen eye for design and a deep
+      appreciation for clean, efficient code.
+      Currently, I have a solid foundation in HTML, CSS,
+      and JavaScript, and experience in problem-solving
+      with C++. With determination and learning, I aspire
+      to become a proficient developer with innovative
+      ideas and a strong vision, ready to compete in the
+      tech industry.</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor - Communication and Electronics Engineering</strong><br>
+      Faculty of Engineering, Damanhour University<br>
+      Expected Graduation: 2027</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>Bootstrap</span>
+      <span>PHP</span>
+      <span>C++</span>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="card">
+      <h3>Front-End Web Development Trainee - NCW</h3>
+      <p>• Gained practical experience in building responsive and interactive web pages using HTML, CSS, and JavaScript.</p>
+      <p>• Enhanced understanding of UI/UX best practices and modern front-end development workflows.</p>
+    </div>
+    <div class="card">
+      <h3>Full-Stack Web Development Trainee - NTI</h3>
+      <p>• Trained in back-end development with PHP and database integration.</p>
+      <p>• Worked on developing dynamic web applications, strengthening both front-end and back-end skills.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>E-Commerce Platform</h3>
+        <p>Furniture store with cart system, product listings, and checkout flow.</p>
+      </div>
+      <div class="card">
+        <h3>To-Do App</h3>
+        <p>Task manager with add/edit/delete features and local storage support.</p>
+      </div>
+      <div class="card">
+        <h3>Books Website</h3>
+        <p>Full-stack PHP app with authentication and CRUD operations for books.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>📍 Al-Behira, Egypt</p>
+    <p>📞 +201278408452</p>
+    <p>📧 <a href="mailto:mai.yasser.sobhy@gmail.com">mai.yasser.sobhy@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>Thank you for visiting my portfolio</p>
+  </footer>
+
+  <script>
+    const text = "Front-End Web Developer";
+    let i = 0;
+    function typing() {
+      if (i < text.length) {
+        document.querySelector(".typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 60);
+      }
+    }
+    typing();
+  </script>
+</body>
+
+</html>
